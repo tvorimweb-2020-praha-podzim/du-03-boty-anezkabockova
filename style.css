@@ -36,8 +36,8 @@ body {
     margin: 100px auto 0;
     box-shadow: 1px 0 30px #959595;
     max-width: 670px;
-    min-height: 440px;
-    border-radius: 5%;
+    height: 440px;
+    border-radius: 10px;
 
 }
     
@@ -49,10 +49,8 @@ body {
     padding: 30px;
     border-radius: 5% 0 0 5%;    
     color: white;
-    max-width: 335px;
-    max-height: 440px;
-
-
+    width: 50%;
+    position: relative;
 }
 
 .slogan {
@@ -65,7 +63,7 @@ body {
     font-size: 28px;
     font-weight: 500;
     text-align: right;
-    line-height: 1.5;
+    line-height: 2.2;
 }
 .zaruka {
     font-size: 12px;
@@ -75,14 +73,17 @@ body {
 }
 .cena,
 .zaruka {
-    position: relative;
-    bottom: 70px;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+
+
 }
 
 .bota {
-position: relative;
-right: 110px;
-top: 10px;
+position: absolute;
+right: 10px;
+bottom: -5px;
 }
 
 /* sekce detaily */
@@ -103,7 +104,7 @@ text-transform: uppercase;
 }
 
 .produkt {
-font-size: 16px;
+font-size: 1rem;
 font-weight: 400;
 color: #959595;
 margin: 15px 15px 0 0;
@@ -123,7 +124,7 @@ margin: 15px 15px 0 0;
     margin: 0;
     justify-content: space-evenly;
     align-items: center;
-    border: solid 1px transparent;
+    border: 1px solid transparent;
 }
 
 h1 {
@@ -135,7 +136,11 @@ h2 {
     margin: 30px 30px 30px 0 ;
 }
 
-.velikosti li {
+li {
+    list-style: none;
+}
+
+.velikosti a {
     display: flex:
     flex: 1 0 5px;
     list-style: none;  
@@ -150,7 +155,7 @@ h2 {
 .velikosti a:hover,
 .velikosti a:active,
 .velikosti a:focus  {
-    border: solid 1px #f15f42;
+    border: 1px solid #f15f42;
     border-radius: 50px;
     color: #f15f42;
     text-align: center;
